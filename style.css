@@ -5,46 +5,50 @@ body {
   background: linear-gradient(135deg, #ffe1f7, #d4f1f4);
   color: #222;
 }
-
 header {
   background-color: #141c3a;
   padding: 20px 10px;
   text-align: center;
 }
-
 .logo {
   width: 240px;
   max-width: 80%;
   height: auto;
-  display: inline-block;
 }
-
 main {
   padding: 20px 10px;
 }
-
 .menu h2, .contact h2 {
   font-size: 1.8em;
   color: #ff4ec7;
   text-align: center;
 }
-
-.menu ul {
+.product-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
-.menu li {
+.product-list li {
   background: #fff;
-  margin: 12px 0;
-  padding: 16px;
-  border-left: 8px solid #00c3ff;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  font-size: 1.1em;
+  margin: 16px 0;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
-
+.product-list img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.product-info {
+  flex-grow: 1;
+  font-size: 1em;
+  line-height: 1.4em;
+}
 .contact {
   margin-top: 40px;
   background: #fff;
@@ -52,7 +56,6 @@ main {
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.07);
 }
-
 footer {
   background-color: #141c3a;
   color: white;
@@ -61,7 +64,6 @@ footer {
   font-size: 0.9em;
   margin-top: 40px;
 }
-
 @media (min-width: 600px) {
   main {
     max-width: 650px;
